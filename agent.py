@@ -1,6 +1,7 @@
 __import__('pysqlite3')
 import sys
 sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+import sqlite3
 # 사용할 라이브러리 선언
 import streamlit as st
 import openai
